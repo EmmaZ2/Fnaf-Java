@@ -1,0 +1,26 @@
+
+7
+java:S1220""Move this file to a named package.8¾Ú“ÆÅ1
+b
+java:S1854"@Remove this useless assignment to local variable "goldenFreddy".(™¡ëËüÿÿÿÿ8ÂÚ“ÆÅ1
+U
+java:S1854"8Remove this useless assignment to local variable "foxy".(ÄÈ“ì8ÂÚ“ÆÅ1
+[
+java:S1854"9Remove this useless assignment to local variable "chica".(Êé˜ğıÿÿÿÿ8ÂÚ“ÆÅ1
+W
+java:S1854":Remove this useless assignment to local variable "bonnie".(¢€´Õ8ÂÚ“ÆÅ1
+W
+java:S1854":Remove this useless assignment to local variable "freddy".(ŞÜëĞ8ÂÚ“ÆÅ1
+H
+java:S1481"+Remove this unused "freddy" local variable.(ŞÜëĞ8ÄÚ“ÆÅ1
+H
+java:S1481"+Remove this unused "bonnie" local variable.(¢€´Õ8ÄÚ“ÆÅ1
+L
+java:S1481"*Remove this unused "chica" local variable.(Êé˜ğıÿÿÿÿ8ÅÚ“ÆÅ1
+F
+java:S1481")Remove this unused "foxy" local variable.(ÄÈ“ì8ÅÚ“ÆÅ1
+S
+java:S1481"1Remove this unused "goldenFreddy" local variable.(™¡ëËüÿÿÿÿ8ÅÚ“ÆÅ1
+G	java:S106"+Replace this use of System.out by a logger.(­ÒñÆ8¢Ê¥ëÅ1
+G	java:S106"+Replace this use of System.out by a logger.(Îä¦ú8¨ëÅ1
+]	java:S125"<This block of commented-out lines of code should be removed.(ÓÌ´ƒÿÿÿÿÿ8¿‡³ëÅ1
