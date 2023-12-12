@@ -21,7 +21,7 @@ public class Main {
         }
 
 
-      //  System.out.println(Freddy.getName());
+          System.out.println(Freddy.getName());
 
     }
 }
