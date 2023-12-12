@@ -1,7 +1,0 @@
-
-g	java:S112	"FDefine and throw a dedicated exception instead of using a generic one.(€Šáøÿÿÿÿ8­¥«ÆÅ1
-h	java:S128 "LEnd this switch case with an unconditional break, return or throw statement.(Å“èï8€ñÃàÂ1
-m	java:S128"LEnd this switch case with an unconditional break, return or throw statement.(–êƒ­ùÿÿÿÿ8€ñÃàÂ1
-m	java:S128"LEnd this switch case with an unconditional break, return or throw statement.(Èïêşÿÿÿÿ8€ñÃàÂ1
->	java:S131""Add a default case to this switch.(³ÊÇï8€ñÃàÂ1
-X	java:S125+"<This block of commented-out lines of code should be removed.(ã›¹†8ñÃàÂ1

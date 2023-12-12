@@ -4,12 +4,13 @@ import domain.Animatronic;
 
 import util.Player;
 import util.Room;
+import util.Side;
 
 import java.util.ArrayList;
 
-public class Bonnie extends Animatronic {
 
-    public Bonnie(int difficulty) throws Exception {
+public class Bonnie extends Animatronic {
+    public Bonnie(int difficulty){
         super(difficulty);
         setRoute();
         setActualRoom(getRoute().get(0));

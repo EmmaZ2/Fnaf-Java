@@ -1,6 +1,0 @@
-
-p
-java:S1450"SRemove the "side" field and declare it as a local variable in the relevant methods.(Å‹–Ú8ÛèèÅÅ1
-L	java:S106"+Replace this use of System.out by a logger.(ŞøÄ¼ıÿÿÿÿ8àèèÅÅ1
-E
-java:S1068"(Remove this unused "side" private field.(Å‹–Ú8áèèÅÅ1

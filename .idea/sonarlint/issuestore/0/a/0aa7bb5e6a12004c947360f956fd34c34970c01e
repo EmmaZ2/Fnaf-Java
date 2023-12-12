@@ -1,6 +1,0 @@
-
-0
-java:S1700	"Rename field "Side"(çªã­8·ì§ÃÅ1
-v	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¬³–ß8ÆÁ¦ÃÅ1
-v	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Ð»øÈ8ÆÁ¦ÃÅ1
-k	java:S116	"ORename this field "Side" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(çªã­8¹ì§ÃÅ1

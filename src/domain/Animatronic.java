@@ -1,12 +1,15 @@
 package domain;
 import util.CameraController;
 import util.Room;
+import util.Side;
+
 import java.util.ArrayList;
 
 public abstract class Animatronic {
-    protected final static int MAX_DIFFICULTY = 20;
-    protected int difficulty;
+    private final static int MAX_DIFFICULTY = 20;
+    private int difficulty;
     protected static Room actualRoom;
+    private Side doorSide;
     //Singleton
     protected ArrayList<Room> pathing = new ArrayList<>();
 
@@ -84,7 +87,8 @@ public abstract class Animatronic {
         return null;
     }
     public static Room getActualRoom() {return actualRoom;}
-    public static String getName() {return Animatronic.class.getName();}
+    public abstract String getName();
+
     protected void timedMove(){
         //TODO por tiempo
     }

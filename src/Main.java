@@ -13,15 +13,10 @@ public class Main {
         Animatronic chica = new Chica(0);
         Animatronic foxy = new Foxy(0);
         Animatronic goldenFreddy = new GoldenFreddy(0);
-        float a= 0.1F;
-        if(a==0.1){
-            System.out.print("yes");
-        }else{
-            System.out.print("No");
-        }
 
 
-      //  System.out.println(Freddy.getName());
+
+
 
     }
 }

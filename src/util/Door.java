@@ -1,5 +1,6 @@
 package util;
 import domain.Animatronic;
+import implement.*;
 
 public class Door {
     private boolean open=false;
@@ -28,7 +29,7 @@ public class Door {
         }
         if(Animatronic.getActualRoom().equals(Room.CAM12)){
             light=true;
-            System.out.println(Animatronic.getName()+" is on the office");
+            System.out.println(Freddy.getName()+" is on the office");
         }
     }
      void lightOff(){
