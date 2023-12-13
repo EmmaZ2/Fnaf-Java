@@ -37,6 +37,12 @@ public class Chica extends Animatronic {
         }
 
     }
+
+    @Override
+    public String getName() {
+        return getClass().getSimpleName();
+    }
+
     protected void move () {
         if (movementTry()){
                 int x = (int)(Math.random()*2+1);

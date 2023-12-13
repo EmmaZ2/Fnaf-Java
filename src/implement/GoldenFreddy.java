@@ -27,4 +27,9 @@ public class GoldenFreddy extends Animatronic {
     protected void move(){
         changeCamera(actualRoom,getNextRoom());
     }
+
+    @Override
+    public String getName() {
+        return getClass().getSimpleName();
+    }
 }

@@ -13,4 +13,5 @@ public class Office {
         Door leftDoor = new Door(Side.Left);
         Door rightDoor = new Door(Side.Right);
     }
+
 }

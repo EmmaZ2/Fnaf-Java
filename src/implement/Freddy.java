@@ -42,7 +42,7 @@ public class Freddy extends Animatronic {
 
     @Override
     public  String getName() {
-        return Freddy.class.getName();
+        return getClass().getSimpleName();
     }
 
 

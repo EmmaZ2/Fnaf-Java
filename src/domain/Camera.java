@@ -1,7 +1,6 @@
 package domain;
 
 import util.Room;
-
 import java.util.ArrayList;
 public class Camera {
     public boolean enabled=false;

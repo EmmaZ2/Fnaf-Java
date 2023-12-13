@@ -15,12 +15,5 @@ public class Main {
         Animatronic goldenFreddy = new GoldenFreddy(0);
 
 
-<<<<<<< HEAD
-
-
-=======
-          System.out.println(Freddy.getName());
->>>>>>> 1df289caafada3a9396fe4b54e63c1b5d8d2fc9e
-
     }
 }

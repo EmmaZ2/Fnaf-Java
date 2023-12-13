@@ -8,18 +8,29 @@ import java.util.ArrayList;
 public abstract class Animatronic {
     private final static int MAX_DIFFICULTY = 20;
     private int difficulty;
-    protected static Room actualRoom;
-    private Side doorSide;
+    protected Room actualRoom;
+    protected Side doorSide;
     //Singleton
     protected ArrayList<Room> pathing = new ArrayList<>();
 
     protected Animatronic(int difficulty){
         setDifficulty(difficulty);
         setActualRoom(actualRoom);
+        setDoorSide(doorSide);
     }
 
+    protected void setDoorSide(Side doorSide) {
+        if((this.getRoute().get(getRoute().size()-2)).equals(Room.CAM5) ||
+            (this.getRoute().get(getRoute().size()-2)).equals(Room.CAM4)){
+                this.doorSide = Side.Left;
+        }else{
+                this.doorSide = Side.Right;
+        }
+    }
+ public Side getDoorSide() {return doorSide;}
+
     private void setDifficulty(int difficulty) throws RuntimeException {
-        if (difficulty < 0   || difficulty > 20) {
+        if (difficulty < 0 || difficulty > 20) {
             throw new RuntimeException("La dificultad debe ser entre 0 y 20");
         } else {
             this.difficulty = difficulty;
@@ -86,8 +97,10 @@ public abstract class Animatronic {
         }
         return null;
     }
-    public static Room getActualRoom() {return actualRoom;}
+    public Room getActualRoom() {return actualRoom;}
     public abstract String getName();
+
+
 
     protected void timedMove(){
         //TODO por tiempo

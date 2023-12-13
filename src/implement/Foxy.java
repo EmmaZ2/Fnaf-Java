@@ -35,6 +35,11 @@ public class Foxy extends Animatronic {
         }
     }
 
+    @Override
+    public String getName() {
+        return getClass().getSimpleName();
+    }
+
 
 
 

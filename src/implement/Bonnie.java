@@ -1,8 +1,5 @@
 package implement;
-
 import domain.Animatronic;
-
-import util.Player;
 import util.Room;
 import util.Side;
 
@@ -41,5 +38,10 @@ public class Bonnie extends Animatronic {
                 changeCamera(actualRoom,getPreviousRoom());
             }
         }
+    }
+
+    @Override
+    public String getName() {
+        return getClass().getSimpleName();
     }
 }
