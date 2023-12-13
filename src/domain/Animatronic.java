@@ -19,13 +19,8 @@ public abstract class Animatronic {
         setDoorSide(doorSide);
     }
 
-    protected void setDoorSide(Side doorSide) {
-        if((this.getRoute().get(getRoute().size()-2)).equals(Room.CAM5) ||
-            (this.getRoute().get(getRoute().size()-2)).equals(Room.CAM4)){
-                this.doorSide = Side.Left;
-        }else{
-                this.doorSide = Side.Right;
-        }
+    public void setDoorSide(Side doorSide) {
+        this.doorSide=doorSide;
     }
  public Side getDoorSide() {return doorSide;}
 

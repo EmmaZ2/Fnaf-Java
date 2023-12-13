@@ -33,7 +33,10 @@ public class CameraController{
         cameras.add(new Camera(Room.CAM10));
         cameras.add(new Camera(Room.CAM11));
         cameras.add(new Camera(Room.CAM12));
+        cameras.add(new Camera(Room.CAM13));
+        cameras.add(new Camera(Room.CAM14));
     }
+
     public ArrayList<Camera> getCameras() {
         return this.cameras;
     }

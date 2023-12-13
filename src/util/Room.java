@@ -13,6 +13,8 @@ public enum Room {
     CAM10("6"),
     CAM11("7"),
     CAM12("You"),
+    CAM13("LeftDoor"),
+    CAM14("RightDoor"),
     ; //Buena praxis
 
 

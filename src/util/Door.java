@@ -1,5 +1,4 @@
 package util;
-import domain.Animatronic;
 
 public class Door {
     private boolean open=false;
@@ -9,7 +8,6 @@ public class Door {
         setSide(side);
     }
     protected void setSide(Side side) {
-        assert side!= null : "side can't be null";
         this.side = side;
     }
     protected void closeDoor(){
@@ -22,18 +20,14 @@ public class Door {
             open = true;
         }
     }
-    protected void lightOn(Animatronic animatronic){
-        if(!light){
-            light = true;
-        }
-        if(animatronic!=null && animatronic.getActualRoom().equals(Room.CAM12)) {
-            light=true;
-            System.out.println(animatronic.getName() + " is on the Office");
-        }
+    public void lightSwitch(){
+        light = !light;
     }
-     void lightOff(){
-        if(light){
-            light = false;
-        }
+    public void checkAnimatronic() {
+        Office.getInstance().sideSelect();
+
+    }
+    protected Side getSide() {
+        return side;
     }
 }
