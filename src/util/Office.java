@@ -35,11 +35,11 @@ public class Office {
     }
     public void sideSelect(){
       cameraController.getCameras().forEach(room->{
-          if(room.getRoom().equals(Room.CAM5)){
+          if(room.getRoom().equals(Room.CAM13)){
               setAnimatronicDoorSide(room, Side.Left);
           }
 
-          if(room.getRoom().equals(Room.CAM8)){
+          if(room.getRoom().equals(Room.CAM14)){
               setAnimatronicDoorSide(room, Side.Right);
           }
       });

@@ -21,6 +21,7 @@ public class Bonnie extends Animatronic {
         pathing.add(Room.CAM6);
         pathing.add(Room.CAM4);
         pathing.add(Room.CAM5);
+        pathing.add(Room.CAM13);
         pathing.add(Room.CAM12);
     }
 

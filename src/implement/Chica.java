@@ -22,6 +22,7 @@ public class Chica extends Animatronic {
         pathing.add(Room.CAM10);
         pathing.add(Room.CAM7);
         pathing.add(Room.CAM8);
+        pathing.add(Room.CAM14);
         pathing.add(Room.CAM12);
     }
 
