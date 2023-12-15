@@ -1,5 +1,6 @@
 package domain;
 import util.CameraController;
+import util.Player;
 import util.Room;
 import util.Side;
 
@@ -10,6 +11,7 @@ public abstract class Animatronic {
     private int difficulty;
     protected Room actualRoom;
     protected Side doorSide;
+    CameraController cameraController= CameraController.getInstance();
     //Singleton
     protected ArrayList<Room> pathing = new ArrayList<>();
 
@@ -93,8 +95,10 @@ public abstract class Animatronic {
         return null;
     }
     public Room getActualRoom() {return actualRoom;}
-    public abstract String getName();
+    protected abstract String getName();
+    protected void killOrReturn(){
 
+    }
 
 
     protected void timedMove(){

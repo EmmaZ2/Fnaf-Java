@@ -45,4 +45,5 @@ public class Bonnie extends Animatronic {
     public String getName() {
         return getClass().getSimpleName();
     }
+
 }

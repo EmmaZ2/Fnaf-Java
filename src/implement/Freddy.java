@@ -2,7 +2,7 @@ package implement;
 
 import domain.Animatronic;
 import util.Room;
-
+import util.Side;
 import java.util.ArrayList;
 
 public class Freddy extends Animatronic {
@@ -37,6 +37,9 @@ public class Freddy extends Animatronic {
             }else{
                 changeCamera(actualRoom,getPreviousRoom());
             }
+        }
+        if (getActualRoom().equals(Room.CAM8)){
+            setDoorSide(Side.Right);
         }
     }
 

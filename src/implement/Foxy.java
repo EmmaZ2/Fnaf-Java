@@ -2,14 +2,16 @@ package implement;
 
 import domain.Animatronic;
 import util.Room;
+import util.Side;
+
 import java.util.ArrayList;
 
 public class Foxy extends Animatronic {
     private int sceneState;
-    public Foxy(int difficulty) throws Exception {
+    public Foxy(int difficulty){
         super(difficulty);
         setRoute();
-        setActualRoom(getRoute().get(0));
+        setActualRoom(getRoute().getFirst());
     }
 
     @Override
@@ -32,6 +34,9 @@ public class Foxy extends Animatronic {
                 case 2 : sceneState++;
                 case 3 : changeCamera(actualRoom,getNextRoom());
             }
+        if(getActualRoom().equals(Room.CAM4)){
+            setDoorSide(Side.Left);
+        }
         }
     }
 
