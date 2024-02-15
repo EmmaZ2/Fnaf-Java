@@ -8,12 +8,12 @@ public class Main {
         CameraController.getInstance();
         Office.getInstance();
 
-        Animatronic freddy = new Freddy(0);
+        Animatronic freddy = new Freddy(20);
         Animatronic bonnie = new Bonnie(0);
         Animatronic chica = new Chica(0);
         Animatronic foxy = new Foxy(0);
         Animatronic goldenFreddy = new GoldenFreddy(0);
-
+        Player.getInstance();
 
     }
 }

@@ -1,17 +1,21 @@
 package implement;
 import domain.Animatronic;
+import util.Player;
 import util.Room;
-import util.Side;
-
 import java.util.ArrayList;
 
 
+
 public class Bonnie extends Animatronic {
-    public Bonnie(int difficulty){
+    public Bonnie(int difficulty) throws InterruptedException {
         super(difficulty);
         setRoute();
         setActualRoom(getRoute().get(0));
-    }
+        while (Player.getInstance().isAlive()) {
+            move();
+        }
+        }
+
 
     @Override
     protected void setRoute() {
@@ -23,6 +27,7 @@ public class Bonnie extends Animatronic {
         pathing.add(Room.CAM5);
         pathing.add(Room.CAM13);
         pathing.add(Room.CAM12);
+
     }
 
     @Override
@@ -30,19 +35,28 @@ public class Bonnie extends Animatronic {
         return pathing;
     }
 
-    protected void move () {
+   /* protected void move () {
         if (movementTry()){
             int x = (int)(Math.random()*2+1);
             if(x==2) {
+                System.out.println(getClass().getSimpleName() +"has moved");
                 changeCamera(actualRoom, getNextRoom());
-            }else{
+            }else if(!actualRoom.equals(getRoute().getFirst())){
+                System.out.println(getClass().getSimpleName() +"has moved");
                 changeCamera(actualRoom,getPreviousRoom());
             }
         }
-    }
+    }*/
+   protected void move () {
+       if (movementTry()) {
+           System.out.println(getClass().getSimpleName() +"has moved");
+           changeCamera(actualRoom, getNextRoom());
+       }
+   }
 
     @Override
     public String getName() {
+
         return getClass().getSimpleName();
     }
 

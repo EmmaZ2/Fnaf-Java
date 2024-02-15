@@ -57,7 +57,6 @@ public abstract class Animatronic {
     }
 
     protected boolean movementTry() {
-
         int x = (int) (Math.random() * MAX_DIFFICULTY + 1);
         return (x <= difficulty);
     }

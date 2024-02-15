@@ -1,9 +1,11 @@
 package util;
 
 
+import domain.Camera;
+
 public class Player {
     private static Player instance;
-    private static boolean isAlive;
+    private static boolean isAlive=true;
     private Player(){
 
     }
@@ -20,10 +22,13 @@ public class Player {
                 camera.getAnimatronics().forEach(animatronic->{
                     if(animatronic.getActualRoom().equals(camera.getRoom()) && isAlive){
                         isAlive=false;
+                        System.out.println("You Died");
                     }
                 });
             }
         });
     }
-    
+    public boolean isAlive() {
+        return isAlive;
+    }
 }
